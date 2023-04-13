@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "my-project"
+version = "0.0.1"
+description = "demo project"
+authors = [
+    "RAO ZHI <2829656235@qq.com>"
+]
+
+[tool.poetry.dependencies]
+poetry = "^1.4.2"
+python = "^3.9"
+fastapi = "^0.95.0"
+uvicorn = "^0.21.1"
+pydantic = "^1.10.7"
+passlib = "^1.7.4"
+python-jose = "^3.3.0"
+python-multipart = "^0.0.6"
