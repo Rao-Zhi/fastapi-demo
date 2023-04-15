@@ -6,8 +6,8 @@ from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from pydantic import BaseModel
 from passlib.context import CryptContext
 from jose import JWTError, jwt
-from app.routers import users
-
+# from app.routers import users
+from core import Router
 
 # SECRET_KEY = "3dba8e6a150492870614f0a9fbe63399b1f5a1fcfcfd04b05cc30821946c4183"
 # ALGORITHM = "HS256"
@@ -41,7 +41,7 @@ from app.routers import users
 
 app = FastAPI()
 
-app.include_router(users.router)
+app.include_router(Router.router)
 
 # oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 

@@ -1,6 +1,7 @@
 from sqlalchemy.orm import Session
 
-from . import models, schemas
+from models import user as models
+from schemas import user as schemas
 
 def get_users(db: Session, skip: int = 1, limit: int = 10):
     offset = (skip -1) * limit;
